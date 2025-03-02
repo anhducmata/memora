@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: memora-config
+  namespace: memora
+data:
+  NODE_ENV: "production"
+  PORT: "3000"
+  NEO4J_URI: "bolt://neo4j-service:7687"
+  PINECONE_ENVIRONMENT: "your-pinecone-environment"
+  PINECONE_INDEX: "memories"
+  AWS_REGION: "us-east-1"
+  S3_BUCKET: "memora-media" 
